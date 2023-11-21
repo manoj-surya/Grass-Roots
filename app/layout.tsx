@@ -1,6 +1,6 @@
+import Footer from './components/Footer/Footer'
+import Navbar from './components/Navbar/index'
 import './globals.css'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'BBB BRICKS',
@@ -14,7 +14,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <Navbar/>
+        {children}
+        <Footer />
+      </body>
     </html>
   )
 }
